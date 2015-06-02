@@ -1,6 +1,12 @@
 #include "liblist.h"
 #include <stdlib.h>
 
+/*
+ * This function initializes a list and sets
+ * it's first link's value to the content of 
+ * the argument passed to the function.
+ */
+
 node_t  *init_list(char *first_value)
 {
     node_t      *head = NULL;
