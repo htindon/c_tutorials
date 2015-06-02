@@ -1,3 +1,6 @@
+#ifndef LIBLIST_H
+# define LIBLIST_H
+
 typedef struct node {
     char *value;
     struct node *next;
@@ -11,3 +14,5 @@ char    *pop_first(node_t **head);
 char    *pop_last(node_t *head);
 char    *pop_by_index(node_t **head, int n);
 char    *pop_by_value(node_t **head, char *rm_value);
+
+#endif
